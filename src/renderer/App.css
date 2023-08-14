@@ -1,0 +1,625 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../../assets/fonts/Inter-Regular.ttf');
+}
+::selection {
+  background-color: #18adce;
+  color: #000000;
+}
+
+* {
+  user-select: none;
+}
+
+body {
+  position: relative;
+  color: white;
+  /* height: 100vh; */
+  background-color: #101010 !important;
+  /* background: linear-gradient(180deg, rgb(0, 0, 0) -39.16%, #092d57 100%); */
+  /* user-select: none; */
+}
+
+.game-backgound {
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.logo {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.main {
+  /* padding-top: 100px; */
+}
+/*PFP*/
+.pfp {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.pfp img {
+  border-radius: 50%;
+}
+
+/*carousel*/
+.carousel-control-prev {
+  display: none !important;
+}
+.carousel-control-next {
+  display: none !important;
+}
+.carousel-indicators {
+  z-index: 1 !important;
+}
+/*searchbar*/
+.searchBar {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+.searchGame {
+  padding-bottom: 16px !important;
+}
+.userPFP {
+  position: fixed;
+  right: 24px;
+}
+.navbar-link {
+  cursor: pointer;
+  color: #fff;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background-color: #3f3f3f2f;
+  backdrop-filter: blur(10px);
+  border: solid 1px #252525;
+  margin-right: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  height: 100px;
+  width: 250px;
+  font-size: 10pt;
+  font-weight: 600;
+}
+
+.navbar-link:hover {
+  color: #fff;
+  background-color: #8686862f;
+  backdrop-filter: blur(10px);
+}
+.navbar-link:active {
+  background-color: #8686862f !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.navbar-link:focus {
+  background-color: #8686862f !important;
+  backdrop-filter: blur(10px) !important;
+}
+.navbar-link span {
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 9pt;
+  position: absolute;
+  color: #d6d6d6;
+  left: 15px;
+  top: 30px;
+  text-transform: capitalize;
+}
+.navbar-link img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.item-list {
+  text-decoration: none !important;
+}
+
+.game-item-list {
+  text-decoration: none !important;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.2rem;
+  background: #1d1d1d;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 15px;
+}
+
+.customNav {
+  margin-top: 60px;
+  margin-left: 130px;
+  position: fixed !important;
+  z-index: 2;
+  width: 100%;
+  height: 70px;
+}
+.carousel-inner {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+/* Optional styles to push the main content to the right */
+.col {
+  margin-left: 90px; /* Adjust this value based on your sidebar width */
+}
+
+/* Optional styles to make the main content scrollable if needed */
+.col {
+  overflow-y: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #101010;
+  backdrop-filter: blur(20px);
+  width: 100px !important;
+  z-index: 1;
+}
+.item-list {
+  margin: 10px;
+  margin-bottom: 5px;
+  background-color: #a0a0a044;
+  backdrop-filter: blur(200px);
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  list-style-type: none;
+  color: #828689;
+  border-radius: 6px;
+}
+.item-list:hover {
+  cursor: pointer;
+  color: #c5c3c3;
+  transition: all ease 0.3s;
+  background-color: #d1d1d144;
+  backdrop-filter: blur(200px);
+  border-radius: 5px;
+}
+
+.sidebarIcon {
+  margin-right: 15px;
+}
+.sidebarIcon img {
+  /* Your default SVG color */
+  width: 40px;
+}
+
+.userInfo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.userInfo .nickname {
+  color: #18adce;
+}
+.userInfo .username {
+  color: #828689;
+  font-size: 0.9rem;
+}
+.brandLogo {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-bottom: 50px;
+}
+
+#launch-button {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, #28aaf3, #64bdef);
+  border: none;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  width: 162px;
+  outline: solid 5px #ffffff1e;
+  transition: background-image 0.3s ease, box-shadow 0.3s ease;
+  bottom: 30px;
+  right: 40px;
+  height: 63px;
+}
+#launch-button:hover {
+  background-image: linear-gradient(to right, #92d7ff, #28aaf3);
+  cursor: pointer;
+  box-shadow: 0 0px 30px #3eb0f26c;
+}
+
+#launch-disabled-button {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, #262626, #262626);
+  border: none;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  width: 162px;
+  outline: solid 5px #ffffff1e;
+  transition: background-image 0.3s ease, box-shadow 0.3s ease;
+  bottom: 30px;
+  right: 40px;
+  height: 63px;
+}
+#launch-disabled-button:hover {
+  cursor: default;
+  background-image: linear-gradient(to right, #262626, #262626);
+}
+
+#play-btn-image {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  transition: 0.3s;
+  margin-right: 10px;
+}
+#update-button {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 10px;
+  background-image: linear-gradient(to right, #28f35b, #64ef7b);
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  width: 166px;
+  outline: solid 5px #ffffff1e;
+  transition: background-image 0.3s ease, box-shadow 0.3s ease;
+  bottom: 30px;
+  right: 500px;
+  height: 63px;
+}
+#update-button:hover {
+  background-image: linear-gradient(to right, #92ff9b, #28f354);
+  cursor: pointer;
+  box-shadow: 0 0px 30px #3ef23e6c;
+}
+#install-button {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 10px;
+  background-image: linear-gradient(to right, #28f35b, #64ef7b);
+  border: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  width: 180px;
+  outline: solid 5px #ffffff1e;
+  transition: background-image 0.3s ease, box-shadow 0.3s ease;
+  bottom: 30px;
+  right: 500px;
+  height: 63px;
+}
+#install-button:hover {
+  background-image: linear-gradient(to right, #92ff9b, #28f354);
+  cursor: pointer;
+  box-shadow: 0 0px 30px #3ef23e6c;
+}
+.logout-btn {
+  position: fixed;
+  bottom: 50px;
+  left: 35px;
+  cursor: pointer;
+}
+.logout-btn img {
+  width: 30px;
+  filter: invert(100%);
+  transition: 0.3s;
+}
+.logout-btn img:hover {
+  filter: invert(10%);
+}
+
+/* Image size on hover */
+#launch-button:hover #play-btn-image {
+  transition: 0.3s;
+  width: 45px; /* Adjust the width as needed */
+  height: 45px; /* Adjust the height as needed */
+}
+#update-button:hover #play-btn-image {
+  transition: 0.3s;
+  width: 45px; /* Adjust the width as needed */
+  height: 45px; /* Adjust the height as needed */
+}
+#install-button:hover #play-btn-image {
+  transition: 0.3s;
+  width: 45px; /* Adjust the width as needed */
+  height: 45px; /* Adjust the height as needed */
+}
+.upcoming-update {
+  height: 250px;
+  width: 350px;
+  background-color: red;
+  position: fixed;
+  bottom: 40px;
+  left: 140px;
+}
+.repair-wrapper {
+  z-index: 1;
+  position: fixed;
+  bottom: 40px;
+  right: 240px;
+}
+.repair-wrapper button {
+  background: #64bdef;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 12pt;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #28aaf3, #64bdef);
+  transition: background-image 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+  float: right;
+  width: 100px;
+}
+.repair-wrapper button:hover {
+  box-shadow: 0 0px 20px #3eb0f26c;
+  background-image: linear-gradient(to right, #7fccf8, #64bdef);
+}
+.repair-disabled-wrapper {
+  z-index: 1;
+  position: fixed;
+  bottom: 40px;
+  right: 240px;
+}
+.repair-disabled-wrapper button {
+  background: #262626;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 12pt;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 7px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #262626, #262626);
+  transition: background-image 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+  float: right;
+  width: 100px;
+}
+.repair-disabled-wrapper button:hover {
+  cursor: default;
+  background-image: linear-gradient(to right, #262626, #262626);
+}
+.progress-wrapper {
+  position: fixed;
+  left: 140px;
+}
+.content-update-label {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background-color: #4747472f;
+  backdrop-filter: blur(10px);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+  font-size: 10pt;
+  text-transform: uppercase;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+}
+.news-label {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background-color: #4747472f;
+  backdrop-filter: blur(10px);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+  font-size: 10pt;
+  text-transform: uppercase;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+}
+.news-label:hover {
+  color: #fff;
+}
+
+.content-update-label:hover {
+  color: #fff;
+}
+
+/* eslint-disable */
+
+.shop-container {
+  display: flex;
+  align-items: center;
+  padding-left: 140px;
+  padding-top: 200px;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 900px;
+}
+
+.item-card {
+  background-color: #3f3f3f2f;
+  backdrop-filter: blur(10px);
+  border: solid 1px #252525;
+  padding: 1px;
+  border-radius: 5px;
+  text-align: center;
+  height: 240px;
+  width: 330px;
+  cursor: pointer;
+}
+.item-card:hover {
+  background-color: #8686862f;
+  backdrop-filter: blur(10px);
+}
+
+.item-image {
+  height: 145px;
+  width: 145px;
+}
+
+.item-button {
+  width: 100%;
+  padding: 5px 10px;
+  background-image: linear-gradient(to right, #28aaf3, #64bdef);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+}
+.item-button:hover {
+  background-image: linear-gradient(to right, #7fccf8, #64bdef);
+}
+.item-label {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mythCoin {
+  top: 10px;
+  right: 70px;
+  position: absolute;
+  z-index: 1;
+}
+.floating-container {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  top: 120px;
+}
+.floating-effect {
+  opacity: 0; /* Initially hidden */
+  animation: fadeFloat 1s ease-in-out forwards; /* Apply the animation */
+}
+.floating-effect-right {
+  animation: fadeFloatRight 1s ease-in-out forwards; /* Apply the animation */
+}
+.floating-effect-left {
+  animation: fadeFloatLeft 1s ease-in-out forwards; /* Apply the animation */
+}
+.loading-button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff77;
+}
+
+.loading-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff77;
+  border-top: 2px solid #fff; /* Loading circle color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 8px; /* Adjust the spacing between the circle and text */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeFloatLeft {
+  0% {
+
+    transform: translateX(400px); /* Initial position */
+  }
+  100% {
+
+    transform: translateX(0); /* Final position */
+  }
+}
+@keyframes fadeFloatRight {
+  0% {
+
+    transform: translateX(-400px); /* Initial position */
+  }
+  100% {
+
+    transform: translateX(0); /* Final position */
+  }
+}
+@keyframes fadeFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Initial position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+}
+/* For Chrome, Edge, and Safari */
+/* These browsers use the ::webkit-scrollbar pseudo-element */
+::-webkit-scrollbar {
+  width: 0px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Transparent scrollbar handle */
+}

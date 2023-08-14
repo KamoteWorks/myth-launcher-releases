@@ -1,0 +1,140 @@
+* {
+  user-select: none;
+}
+
+.login-container {
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  position: fixed;
+  background-color: #101010;
+  transition: right 0.3s ease;
+  /* The sliding transition */
+  background-image: url('../../../../assets/img/login-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-form {
+  width: 400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #151515;
+  padding-top: 70px !important;
+  padding-bottom: 20px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  color: #fff;
+  padding: auto;
+}
+
+.create-account {
+  background-color: transparent !important;
+  width: 100% !important;
+  border: solid 1px #fff !important;
+  text-transform: uppercase;
+  font-size: 10pt !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  transition: 0.3;
+  box-shadow: none;
+}
+
+.create-account:hover {
+  background-color: #fff !important;
+  border: none;
+  color: #101010;
+  box-shadow: none !important;
+}
+
+.custom-input {
+  width: 100%;
+  height: 50px;
+  background-color: #202020;
+  border: 0px;
+  outline: none;
+  color: #A7A8BC;
+  padding: 10px;
+  border: solid 1px #353535;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-transform: unset;
+}
+
+.login-form button {
+  font-size: 12pt;
+  height: 50px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #28AAF3;
+  color: #fff;
+  transition: 0.3s;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.login-form button:hover {
+  background-color: #48b5f5;
+  box-shadow: 0 0px 10px #3eb1f2;
+}
+
+.login-form button:disabled {
+  background-color: #292929;
+  box-shadow: none;
+  color: #646464;
+}
+
+.alert-info {
+  background-color: #3498db;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.alert-error {
+  background-color: #e74c3c;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.alert-success {
+  background-color: #27ae60;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.alert-text {
+  font-size: 14px;
+  margin: 10px;
+  text-align: center;
+}
+
+.forgot-password-text {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 10pt;
+}
+
+p span {
+  color: #28AAF3;
+  cursor: pointer;
+}
+
+p span:hover {
+  color: #48b5f5;
+  cursor: pointer;
+}
+
+.sign-label {
+  color: #616161;
+}

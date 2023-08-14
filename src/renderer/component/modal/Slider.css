@@ -1,0 +1,56 @@
+/* Slider.css */
+.slider {
+  /* Add styles for the sliding div */
+  position: fixed;
+  top: 0;
+  right: -500px; /* Start with the div outside the right edge of the screen */
+  width: 500px; /* Adjust the width of the sliding div as needed */
+  height: 100vh;
+  background-color: #7575751a;
+  transition: right 0.3s ease; /* The sliding transition */
+  backdrop-filter: blur(30px);
+  z-index: 4;
+  padding: 25px;
+}
+
+.slider.open {
+  right: 0; /* Slide the div in from the right edge of the screen */
+}
+h2{
+  color: #fff;
+  margin-top: 310px !important;
+}
+input{
+  width: 100%;
+  height: 50px;
+  background-color: #202020;
+  border: 0px;
+  outline: none;
+  color: #A7A8BC;
+  padding: 10px;
+  border: solid 1px #353535;
+  border-radius: 4px;
+  text-transform: uppercase;
+
+}
+
+.redeem-btn{
+  position: fixed;
+  width: 90%;
+  bottom: 300px;
+  left: 24px;
+  outline: 0;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 500;
+  color: #fff !important;
+  background-color: #48b5f5 !important;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+.redeem-btn:hover{
+  background-color: #48b5f5;
+  box-shadow: 0 0px 10px #3eb1f2;
+}

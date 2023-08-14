@@ -1,0 +1,65 @@
+.TopBar {
+  width: 100%;
+  -webkit-app-region: drag;
+  height: 34px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.btnList {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.minBtn {
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  -webkit-app-region: no-drag;
+}
+
+.minBtn:hover {
+  background-color: #595a5c;
+  height: 25px;
+  -webkit-app-region: no-drag;
+}
+
+.maxBtn {
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  -webkit-app-region: no-drag;
+}
+
+.maxBtn:hover {
+  background-color: #595a5c;
+  height: 25px;
+  -webkit-app-region: no-drag;
+}
+
+.closeBtn {
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  -webkit-app-region: no-drag;
+}
+
+.closeBtn:hover {
+  background-color: red;
+  height: 25px;
+  -webkit-app-region: no-drag;
+}
+.version{
+  position: fixed;
+  bottom: 0px;
+  left: 30px;
+  color: #2b2b2b;
+}
